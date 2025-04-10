@@ -36,11 +36,11 @@ Popup {
   property string state: "PhotoCapture"
   onStateChanged: {
     if (state == "PhotoCapture") {
-      photoPreview.source = '';
-      videoPreview.source = '';
+      photoPreview.source = 'http://192.168.25.1:8080/?action=stream';
+      videoPreview.source = 'http://192.168.25.1:8080/?action=stream';
     } else if (state == "VideoCapture") {
-      photoPreview.source = '';
-      videoPreview.source = '';
+      photoPreview.source = 'http://192.168.25.1:8080/?action=stream';
+      videoPreview.source = 'http://192.168.25.1:8080/?action=stream';
     }
   }
 
